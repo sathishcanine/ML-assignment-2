@@ -1,0 +1,18 @@
+# datasets
+*.csv
+*.zip
+data/
+
+# models
+*.pkl
+*.joblib
+*.h5
+*.pt
+model/
+
+# python cache
+__pycache__/
+.ipynb_checkpoints/
+
+# mac
+.DS_Store
