@@ -94,35 +94,41 @@ All models were evaluated using the following metrics:
 
 ## 🔎 Model Performance Observations
 
-  -----------------------------------------------------------------------
-  ML Model           Observation About Performance
-  ------------------ ----------------------------------------------------
-  Logistic           Performs moderately well but struggles due to
-  Regression         non-linear relationships between features. It
-                     assumes linear decision boundaries, which limits
-                     performance.
+-----------------------------------------------------------------------
+ML Model           Observation About Performance
+------------------ ----------------------------------------------------
+Logistic           Achieves moderate performance with reasonable AUC.
+Regression         However, due to its linear decision boundary
+                   assumption, it struggles to capture complex
+                   non-linear relationships present in the dataset.
 
-  Decision Tree      Performs significantly better as it captures
-                     non-linear feature interactions. However, it may
-                     overfit if not controlled.
+Decision Tree      Performs better than Logistic Regression by capturing
+                   non-linear feature interactions. However, its
+                   generalization ability is lower compared to ensemble
+                   methods on the sampled dataset.
 
-  KNN                Achieves strong performance due to similarity-based
-                     classification in high-dimensional feature space.
-                     However, computational cost increases with dataset
-                     size.
+KNN                Provides competitive performance and handles
+                   high-dimensional data well. Since it relies on
+                   distance-based similarity, its performance is stable
+                   but computationally more expensive as dataset size
+                   increases.
 
-  Naive Bayes        Performs poorly because it assumes feature
-                     independence. Many features in this dataset are
-                     correlated, violating this assumption.
+Naive Bayes        Shows the lowest accuracy among all models. This is
+                   expected because it assumes feature independence,
+                   while many geographical and soil features in the
+                   dataset are correlated.
 
-  Random Forest      Best performing model. Ensemble of trees reduces
-                     variance and improves generalization. Handles
-                     non-linearity and feature interactions effectively.
+Random Forest      Achieved the highest overall performance among all
+                   models in the 50k sample setting. By combining
+                   multiple decision trees, it reduces variance and
+                   improves generalization capability.
 
-  XGBoost            Strong ensemble model with high AUC. Slightly lower
-                     accuracy than Random Forest in this implementation
-                     but still performs robustly.
-  -----------------------------------------------------------------------
+XGBoost            Performs very competitively and achieves high AUC.
+                   Although slightly below Random Forest in accuracy,
+                   it demonstrates strong boosting-based learning and
+                   effective handling of feature interactions.
+-----------------------------------------------------------------------
+
 
 ### Key Insights:
 
