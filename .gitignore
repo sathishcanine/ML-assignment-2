@@ -4,11 +4,11 @@
 data/
 
 # models
-*.pkl
+# *.pkl
 *.joblib
 *.h5
 *.pt
-model/
+# model/
 
 # python cache
 __pycache__/

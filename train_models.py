@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv("dataset.csv")   # or covtype.csv if that's your file
 print(df.shape)
 print(df.columns)
+df = df.sample(n=50000, random_state=42)
 
 
 TARGET = "Cover_Type"
