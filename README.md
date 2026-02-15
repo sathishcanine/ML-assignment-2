@@ -169,3 +169,10 @@ The deployed Streamlit web application includes:
     │   ├── XGBoost.pkl
     │   ├── scaler.pkl
     │   └── model_results.csv
+
+
+1. GitHub Repository Link:
+https://github.com/sathishcanine/ML-assignment-2.git
+
+2. Live Streamlit App Link:
+https://sathish-2025aa05083.streamlit.app/
